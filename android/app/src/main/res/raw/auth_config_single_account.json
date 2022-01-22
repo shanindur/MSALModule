@@ -1,0 +1,15 @@
+{
+  "client_id" : "dc0311ee-20aa-417b-bd46-69edd5559d45",
+  "client_assertion" : "dc0311ee-20aa-417b-bd46-69edd5559d45",
+  "client_secret" : "9kc7Q~uJWgnOyZDB-YPfYH3ZAr9SEgwYswDLW",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://com.azuresamples.msalandroidapp/1wIqXSqBj7w%2Bh11ZifsnqwgyKrY%3D",
+  "account_mode" : "SINGLE",
+  "broker_redirect_uri_registered": false,
+  "authorities" : [
+    {
+      "type": "AAD",
+      "authority_url": "https://login.microsoftonline.com/9d95cde8-c4ec-4b9c-8ee2-249d44b79acf"
+    }
+  ]
+}
