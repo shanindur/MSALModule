@@ -20,7 +20,11 @@ const {MSALModule} = NativeModules;
 
 const App = () => {
   React.useEffect(() => {
-    MSALModule.initializeMSAL();
+    MSALModule.initializeMSAL((data) => {
+      console.log("data",data);
+    });
+
+
   }, []);
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -31,8 +35,13 @@ const App = () => {
     flex: 1,
   };
   const onSilentSign = () => {
-    MSALModule.signInUser();
+    MSALModule.signInUser(
+    (data) => {
+      console.log(`Created a new event with id ${data}`);
+    }
+   );
   };
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <TouchableOpacity onPress={onSilentSign}>
